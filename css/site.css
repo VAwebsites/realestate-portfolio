@@ -1,0 +1,904 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    color: #6b6b6b;
+    -webkit-font-smoothing: antialiased;
+    font-size: 0.875rem;
+}
+nav{
+    text-transform: uppercase;
+    font-size: 0.9rem
+}
+nav .p-2{
+    padding: 0.95rem !important;
+}
+img{
+    max-width: 100%;
+}
+ul.carousel-meta{
+    list-style: none;
+    text-align: right;
+    font-size: 0.9em;
+    padding-top: 7.5rem;
+}
+.carousel-meta .project-status{
+    font-size: 14px;
+    font-style: italic;
+}
+.carousel-meta .project-title{
+    /*font-size: 36px;*/
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.carousel-meta .project-cta a, .cta{
+    font-size: 12px;
+    background: #f9b101;
+    color: #000;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.home-slider .carousel-inner{
+    padding-bottom: 4rem;   
+}
+.home-slider .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+.carousel-meta .project-cta{
+    padding: 20px 0px;
+    /*border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;*/
+}
+.project-img{
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.home-intro{
+    text-align: center;
+}
+
+.home-intro h4, .home-featured-projects h4{
+    font-weight: bold;
+    position: relative;
+}
+.home-intro p, .home-featured-projects p{
+    font-size: 1.188em;
+}
+h1,h2, h3,h4,h5,h6{
+    color: #474747;
+    font-weight: bold;
+}
+h4.m_header span{
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 0 20px;
+}
+h4.m_header{
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+.home-real-estate-updates h4.m_header{
+    padding-bottom: 8rem;
+}
+h4.m_header::before{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 14px;
+    margin-left: 25%;
+    z-index: 1
+}
+a {
+    color: #f9b101;
+}
+a:hover {
+    text-decoration: none;
+}
+.home-intro{
+    box-shadow: 0 12px 28px -15px rgba(0,0,0,0.3);
+    /* margin-top: 5em; */
+}
+.home-featured-projects p{
+    font-size: 0.937rem;
+}
+.home-featured-projects p, .home-featured-projects .col-3 h4{
+    text-align: left; 
+}
+.home-featured-projects img, .home-NRI img, .home-re-update,  .banner-copy img, .map-container {
+    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+}
+.m-contactus .banner-copy img{
+    box-shadow: none;
+}
+.m-contactus .banner-copy{
+    margin-top: 4rem
+}
+.home-featured-projects .col-3 h4 span{
+    font-size: 0.9rem;
+    padding: 0;
+    background: transparent
+}
+.home-NRI{
+    position: relative;
+    margin-bottom: 0rem;
+}
+.view-all{
+    display: block;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: #191919;
+    margin-top: 2.5rem;
+}
+.slide_layer{
+    background-position: right 0;
+    background-size: contain;
+    background-image: url(../images/home-slider-bg.png);
+    display: block;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.box:after {
+  content: ' ';
+  border-top: 100vh solid #dd4f39;
+  border-right: 100vw solid transparent;
+  width: 0;
+  position: absolute;
+}
+.darker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 41%;
+  background: #f9b101;
+  overflow: hidden;
+}
+.darker::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: skewY(157.75deg);
+  transform-origin: left top;
+}
+.triangle-up-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-500px;
+    margin-top:-500px;
+    
+    border-left: 500px solid transparent;
+    border-top: 500px solid #4679BD;
+}
+
+.introductory_layer {
+    background-position: right 0;
+    background-size: cover;
+    background-image: url(../images/orange-home.png);
+    display: block;
+    overflow: hidden;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.home-NRI .container{
+    padding: 7.5rem 15px 10rem 15px;
+    /* padding-bottom: 2.5rem; */
+}
+.home-NRI-copy{
+    padding-top: 6.5rem;
+    text-align: right;
+    padding-left: 20%;
+}
+.home-NRI-copy p{
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 0.1px;
+    line-height: normal;
+    padding-top: 1em;
+}
+.home-real-estate-updates h4.m_header span{
+    background-color: #f9b101 ;
+    color: #000;
+}
+.home-re-update{
+    background-color: #fff;
+    padding: 1.52rem;
+    text-align: left;
+}
+.primary-navigation{
+    position: relative;
+    z-index: 1;
+}
+.primary-navigation nav{
+    text-align: right;
+}
+.primary-navigation a:hover, .primary-navigation a:active{
+    color: #f9b101 !important;
+}
+.home-slider .project-share{
+    display: none !important;
+}
+.home-slider .carousel-item{
+    padding-top: 2.5rem
+}
+.home-section{
+    padding: 4.5em 0 2.5em 0;
+}
+footer{
+    background-color: #f9b101;
+    color: #000;
+}
+footer h5{
+    color: #000;    
+}
+footer ul, ul.contact-points{
+    list-style: none;
+    padding: 0;
+}
+ul.contact-points li{
+    margin-bottom: 1rem;
+    display: table;
+}
+ul.contact-points li i{
+    display: table-cell;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #f9b101;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 100%;
+}
+footer a{
+    color: #000;
+    font-weight: bold;
+}
+.featured-project-content h4, .featured-project-content p{
+    margin: 2.5rem 0;
+    text-align: left;
+}
+.featured-project-content h4 .location{
+    /*font-size: 12px;*/
+    font-weight: normal;
+}
+
+.home-NRI-copy p.last{
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    padding-bottom: 1em;
+}
+.home-NRI-copy a, .home-NRI-copy h4{
+    color: #000
+}
+.home-real-estate-updates h4.m_header::before{
+    border-color: #000;
+}
+.branding, .menu-bar .row{
+    position: relative;
+}
+.branding img{
+    position: absolute;
+    left: 0
+    /* left: -15%; */
+}
+.m-projects .introductory_layer,.m-contactus .introductory_layer{
+    background-size: contain;
+    top: 0
+}
+.m-contactus .banner-copy{
+    /* z-index: 1; */
+}
+.m-contactus .introductory_layer{
+    background: url("../images/home-slider-bg.png") no-repeat;
+    background-size: 131% 100%;
+    background-position: right;
+}
+.mg_logo{
+    width: 90px;
+    height: 98px;
+    background: url("../images/MahavirGroup_Logo.png") no-repeat;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    background-size: contain;
+}
+.menu-bar.sticked .mg_logo{
+    height: 45px;
+    background-size: 100px;
+    top:-10px;
+}
+/* .hero-bg{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 200px 200px;
+border-color: transparent transparent #007bff transparent;
+} */
+
+ /* .hero-bg1 {
+  
+    background: linear-gradient(to right bottom, #fff 52%, #f9b101 48%);
+    position: absolute;
+    top: -29px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: 103vw 78vh;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }  */
+
+  .hero-bg{
+      background:  url(../images/home-slider-bg.png) no-repeat;
+      /* background:  url(../images/home-slider-bg.jpg) no-repeat; */
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 0;
+      /* background-size: cover; */
+      /* background-origin: content-box; */
+      background-position: right 0;
+      background-size: 100vw 100%;
+      /* background-size: cover ; */
+      transition: height 0.2s ease-in;
+      
+  }
+  .inner-page-hero{
+    background:  url(../images/test-bg.jpg) no-repeat;
+    width: 100%;
+    height: 768px;
+    position: absolute;
+    top: 0;
+    padding-top: 14rem;
+    z-index: -1;
+  }
+  .inner-page-hero.about-bnr{
+    background:  url(../images/about-bnr.jpg) no-repeat;
+  }
+  .inner-page-hero.careers-bnr{
+    background:  url(../images/careers-img.jpg) no-repeat;
+    background-position: center;
+  }
+  .inner-page-hero.nri-bnr{
+    background:  url(../images/nri-bnr.jpg) no-repeat;
+  }
+  .inner-page-hero.news-bnr{
+    background:  url(../images/news-bnr.jpg) no-repeat;
+  }
+  .m-bg{
+    background-color: #f9b101
+  }
+  .m-section{
+    padding: 2.5rem;
+  }
+  .m-shadow{
+     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .m-shadow-bottom{
+    box-shadow: 0 12px 28px -15px rgba(0,0,0,0.3);
+ }
+  .m-highlight-text{
+    color: #000;
+  }
+  .m-about-us .overview, .NRI-faqs{
+    margin-top: 10rem;
+  }
+  .NRI-faqs{
+    margin-bottom: 5rem;
+  }
+  .m-about-us .overview h1{
+      color: rgba(255, 255, 255, 0.5);
+  } 
+  .banner-copy{
+    margin-top: 10rem;
+   font-size: 1.05rem;
+  } 
+  .linethrough{
+    display: inline-block;
+    position: relative;
+    padding: 0 90px;
+    /* width: 100%; */
+    text-align: center;
+    padding: 0 120px;
+}
+.linethrough:after{
+    transition: .6s ease-out;
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: #374818;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+  .linethrough:before{
+    transition: .6s ease-out .108s;
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: #374818;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.linethrough{
+    margin-bottom: 2.5rem;
+}
+.team-member h4{
+    padding: 1.25rem 0;
+    margin-bottom: 0;
+    color: #6b6b6b;
+}
+.container h4.section-heading{
+    text-align: center
+}
+footer{
+    /*margin-top: 10.5rem*/
+}
+.m-tabs .nav-item{
+    border-bottom: 1px solid  rgba(0,0,0,0.1);
+    padding: 1.5rem 0;
+}
+.m-tabs .nav-item:first-child, .m-tabs ol li:first-child{
+    padding-top: 0
+}
+.m-tabs a.nav-link, .m-tabs a.nav-link.active {
+    background-color: transparent;
+    color: rgba(0,0,0,0.3);
+    font-size: 1.375em;
+    font-weight: bold;
+    padding: 0;
+    position: relative;
+    transition: all 0.2; 
+}
+.m-tabs a.nav-link.active{
+    color: #000;
+    font-size: 1.625em;
+}
+.m-tabs a.nav-link i.fa{
+    position: absolute;
+    right: 0;
+    top: 5%;
+    font-size: 2rem;
+}
+.rera{
+    background: url("../images/Maharera_Logo.png") no-repeat;
+    padding: 20px 0 20px 65px;
+    font-weight: bold;
+}
+footer{
+    padding:2.5rem 0 1.5rem 0 ;
+    font-size: 1rem;
+}
+.m-projects footer{
+    margin-top: 6rem;
+}
+.m-tabs ol li{
+    padding: 1rem;
+    border-bottom: 1px solid  rgba(0,0,0,0.1);
+}
+.m-tabs ol{
+    padding-left: 0px;
+    margin-left: 15px;
+}
+.medium-spacing {
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+.medium-spacing > [class*="col"]{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+a.load-more{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-weight: bold;
+    color: rgba(0,0,0,0.2);
+    margin-top: 5.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+.m-news .home-re-update{
+    margin-bottom: 3.5rem;
+    box-shadow: 0 0 0.75rem rgba(0,0,0,0.2);
+}
+.m-news .col.home-re-update{
+    flex-basis: auto;
+    width: 40%;
+    flex-wrap: wrap;
+}
+.menu-bar.sticked{
+    transition: width 0.5s ease; 
+}
+.menu-bar.sticked {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+    background:#fff;
+}
+.home-real-estate-updates h4.section-heading{
+    margin-bottom: 5.5rem;
+    color: #000;
+}
+.home-real-estate-updates{
+    text-align: center;
+    padding-bottom: 20rem;
+}
+.mobile-menu-trigger{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    font-size: 2rem;
+}
+.social-media-links{
+    font-size: 1.5rem;
+    display: table;
+    width: 100%;
+}
+.social-media-links a{
+    margin-right: 10px;
+}
+.social-media-links a:last-child{
+    margin-right: 0
+}
+/* footer ul li{
+    text-align: right;
+} */
+.social-media-links a i.fa{
+    display: table-cell;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 100%;
+}
+.site-container{
+    position: relative
+}
+.floating-container{
+    position: fixed; 
+    right: 20px;
+    z-index: 3;
+    bottom: 20px;
+}
+.float-contact ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    display: table;
+}
+.float-contact ul li{
+    padding: 5px;
+}
+.float-contact ul li a{
+    color: #fff;
+    text-align: center;
+}
+.float-contact ul li a i.fa{ 
+    display: table-cell;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #000;
+}
+.m-projects .banner-copy{
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+}
+.p-block-link{
+    display: block;
+    margin-top: 1rem;
+}
+.carousel-navigation{
+    position: relative;
+    margin: 2rem;    
+    padding: 2rem 0;
+    border-top: 1px solid #6b6b6b;
+}
+.carousel-navigation a{
+    display: block;
+    padding: 10px 0;
+    opacity: 1;
+    width: auto;
+}
+.carousel-navigation a[data-slide] span{
+    background-color: #f9b101;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: #000;
+}
+.carousel-indicators .active {
+    background-color: #f9b101;
+}
+.projects-slider .projects-tile{
+    margin-bottom: 4rem;
+}
+.projects-slider .projects-tile h4, .projects-slider .projects-tile a{
+    margin: 1.25rem 0 .5rem 0;
+}
+.map-container{
+    height: 600px;
+    width: 100%
+}
+.home-slider .social-media-links{
+    font-size: 1em;
+}
+.home-slider .social-media-links a i{
+    width: 30px;
+    height: 30px;
+    color: #6b6b6b;
+    border-color: #6b6b6b;
+}
+.home-slider .social-media-links{
+    width: 100%;
+}
+.btn-primary {
+    color: #000;
+    background-color: #f9b101;
+    border-color:#f9b101;
+}
+.projects-slider .projects-tile img{
+    max-width: 100%
+}
+.m-contact-modal .modal-header{
+    border: 0 none;
+}
+.m-contact-modal .modal-content{
+    background: #000;
+}
+.m-contact-modal .modal-content label{
+    color: #6b6b6b;
+}
+.m-contact-modal .close{
+    color: #fff;
+}
+.m-btn{
+    display: block;
+    border-radius: 0;
+    padding: 0.85rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    /* margin: 1rem; */
+}
+.m-contact-modal .m-btn{
+    width: 50%;
+    margin: 1rem auto;
+}
+.btn-primary:hover {
+    color: #000;
+    background-color: #f9b101;
+    border-color: #f9b101;
+}
+.m-project-details .project-section .container{
+    padding: 3em 0;
+}
+.m-project-details .project-section{
+    margin: 2em 0; 
+}
+.m-project-details .map-container{
+    box-shadow: none
+}
+.m-project-details .project-section.project-floorplan{
+    text-align: center;
+} 
+.m-project-details .project-section.project-highlights ul{
+    list-style: disc;
+}
+.m-project-details .project-section.project-highlights .container{
+    border-bottom: 1px solid #ccc;
+}
+.m-project-details .project-section h5{
+    color: #6b6b6b;
+}
+.m-project-details .carousel-meta .project-title{
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: none;
+}
+.m-project-details .carousel-meta{
+    text-align: left;
+}
+.m-project-details .carousel-meta .project-cta{
+    border: 0 none
+}
+.m-project-details .project-section.project-contact h2{
+    text-align: center;
+    display: block;
+    margin: 0em 0 2em 0;
+    width: 100%;
+}
+#project-detail-tbl img{
+    margin-bottom: 1rem;
+}
+.full-vh{
+    height: 100vh;
+}
+.bg-white, .branding-container{
+    background: #fff;
+}
+img.desat {
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    transition: filter 0.5s ease-in-out;
+}
+img.desat:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+.social-media-links a i:before{
+    transition: all 0.2s ease-in-out;
+
+}
+.social-media-links a:hover i:before{
+    font-size: 1.25rem;
+    color: #000;
+}
+.width-50{
+max-width: 50%;
+}
+a:hover, a:active{
+    color:#6b6b6b;
+}
+.modal-project-img{
+    text-align: center;
+}
+.btn-link{
+    white-space: normal;
+    text-align: left;
+}
+/* responsive fix */
+@media screen and (max-width:1200px){
+    
+}
+
+@media screen and (max-width:1024px){
+    ul.carousel-meta{
+        padding-top:0 
+    }
+    .home-NRI-copy{
+        padding-left: 10%;
+    }
+
+}
+@media screen and (max-width:992px){
+    
+}
+@media screen and (max-width:768px){
+    .home-NRI-copy, .home-NRI-img{
+        padding:30px;
+        text-align: left
+    }
+    .menu-bar.sticked{
+        height: 3rem;
+    padding: 0 !important;
+        }
+    .home-NRI-img{
+        text-align: center
+    }
+    .home-real-estate-updates .home-re-update{
+        margin-bottom: 2rem
+    }
+    .mobile-menu-trigger{
+        display: block
+    }
+    .menu-items{
+        display: none;
+        position: absolute;
+        background: rgb(255, 255, 255);
+        width: 100%;
+    }
+    .menu-items a{
+        display: block;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .home-slider .carousel-item{
+        padding-top: 4.5rem;
+    }
+    ul.carousel-meta{
+        text-align: left;
+        padding: 1rem 0;
+    }
+    .featured-project-content{
+        margin-bottom:3rem
+    }
+    .m-projects .banner-copy {
+        margin-top: 7rem;
+        margin-bottom: 10rem;
+    }
+    .m-projects .introductory_layer, .m-contactus .introductory_layer{
+        background-size: cover 
+    }
+    .m-section, .project-section{
+        padding: 2.5rem 15px;
+    }
+    .m-about-us .overview, .NRI-faqs, .projects{
+        margin-top: 0
+    }
+    .m-btn{
+        width: 100%;
+    }
+    .branding-container{
+        text-align: center;
+        margin: -3rem 0 2.5rem 0
+    }
+    .branding-container + .col-md-8.pl-5{
+        padding-left: 15px !important;
+    }
+}
+@media screen and (max-width:576px){
+    .linethrough{
+        padding: 0 70px;
+    }
+    .linethrough:before, .linethrough:after{
+        width: 50px;
+    }
+    footer .text-right {
+        text-align: left !important;
+    }
+    .m-project-details .project-section .container {
+        padding: 0;
+    }
+    .m-project-details .project-section {
+        margin: 0;
+    }
+}
+@media screen and (max-width:500px){
+    .home-slider{
+        margin-top: 3rem
+    }
+    
+    
+}
+@media screen and (max-width:480px){
+    
+}
+@media screen and (max-width:420px){
+    
+}

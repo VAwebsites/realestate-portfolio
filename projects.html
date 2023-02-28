@@ -1,0 +1,462 @@
+
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.mahavirgroup.com/projects.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 15:02:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mahavir Group</title>
+    <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    
+    <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+<link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VH72EL8SB1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VH72EL8SB1');
+</script>
+
+</head>
+
+<body>
+<!-- float-contact -->
+<div class="floating-container float-contact">
+    <ul>
+        <li><a href="tel:+91 98338 79787"><i class="fa fa-phone"></i></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-file-text"></i></a></li>
+    </ul>
+</div>
+<!-- float-contact --><!-- site-container -->
+<div class="site-container">
+<!-- navigation -->
+<div class="container-fluid primary-navigation">
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 menu-bar" topValue="80">
+                <div class="container"> 
+                    <h5 class="my-0 mr-md-auto branding">
+                            <a href="index-2.html" class="mg_logo"></a>
+                    </h5>
+                    <div class="row">
+                        <nav class="col menu-items">
+                            <a class="p-2 text-dark" href="index-2.html">Home</a>
+                            <a class="p-2 text-dark" href="about-us.html">About us</a>
+                            <a class="p-2 text-dark" href="projects.html">Projects</a>
+                            <a class="p-2 text-dark" href="nri-corner.html">NRI Corner</a>
+                            <a class="p-2 text-dark" href="faqs.html">FAQs</a>
+                            <a class="p-2 text-dark" href="careers.html">Careers</a>
+                            <a class="p-2 text-dark" href="news.html">News</a>
+                            <a class="p-2 text-dark" href="contact-us.html">Contact us</a>
+                        </nav>
+                        <div class="mobile-menu-trigger">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+<!-- navigation -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(document).on("click", ".open-project-details",  function() {
+    var projectId = $(this).data('id');
+    $.getJSON('json/project-details.json', function(jsondata){
+        var projectdata = jsondata[projectId];
+        $("#project-detail-hdr h5").html(projectdata.name);
+        $("#project-detail-tbl .image").attr('src', projectdata.image);
+        $("#project-detail-tbl .company").html(projectdata.company);
+        $("#project-detail-tbl .user").html(projectdata.user);
+        $("#project-detail-tbl .rera").html(projectdata.rera);
+        $("#project-detail-tbl .startdate").html(projectdata.startdate);
+        $("#project-detail-tbl .enddate").html(projectdata.enddate);
+        $("#project-detail-tbl .location").html(projectdata.address); 
+    });
+});
+</script>
+<!-- project details modal -->
+<div class="modal fade m-project-detail-modal" id="projectDetailModal" tabindex="-1" role="dialog" aria-labelledby="projectDetailModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div id="project-detail-hdr">
+            <h5></h5>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="project-detail-tbl">
+            <div class="modal-project-img">
+                <img class="desat image">
+            </div>
+            <table class="table table-striped">                
+                <tr>
+                    <td><strong>Company</strong></td>
+                    <td class="company"></td>
+                </tr>
+                <tr>
+                    <td><strong>Property type</strong></td>
+                    <td class="user"></td>
+                </tr>
+                <tr>
+                    <td><strong>Location</strong></td>
+                    <td class="location"></td>
+                </tr>
+                <tr>
+                    <td><strong>RERA</strong></td>
+                    <td class="rera"></td>
+                </tr>
+                <tr>
+                    <td><strong>Start date</strong></td>
+                    <td class="startdate"></td>
+                </tr>
+                <tr>
+                    <td><strong>End date</strong></td>
+                    <td class="enddate"></td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- project details modal --><div class="site-container m-projects">
+    <span class="introductory_layer"></span>
+    <!-- -->
+    <div class="d-flex flex-column flex-md-row ">
+            <div class="container banner-copy">
+                <div class="row">
+                    <div class="col-md-6 pt-5 mt-4" data-aos="zoom-in">
+                        <h2>PROJECTS</h2>
+                        <p class="text-justify">Our full in-house capability service, supporting all aspects of the construction process, ensures that our industry leading build standards are maintained across our entire development portfolio, as well as ensuring that Mahavir Group are able to remain at the forefront of the industry, creating exciting, architecturally designed residences that utilise the latest innovations in both construction methods and materials.
+                        <!-- <a href="#" class="p-block-link">View details</a> -->
+                        </p>
+                    </div>
+                    <div class="col-md-5 text-right" data-aos="fade-up">
+                        <img class="desat" src="images/project-hero.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- -->
+
+        <!-- projects -->
+        <div class="d-flex flex-column flex-md-row">
+                <div class="container m-section  m-highlight-text projects  m-tabs">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <ul class="nav flex-column nav-pills" class="NRI-kb" role="tablist"  aria-orientation="vertical">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="ongoing-projects-tab" data-toggle="tab" href="#ongoing-projects" role="tab" aria-controls="home" aria-selected="true">Ongoing Project <i class="fa fa fa-angle-right" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <a class="nav-link" id="upcoming-projects-tab" data-toggle="tab" href="#upcoming-projects" role="tab" aria-controls="profile" aria-selected="false">Upcoming Projects <i class="fa fa fa-angle-right" aria-hidden="true"></i></a> -->
+                                <a class="nav-link" id="upcoming-projects-tab" data-toggle="" href="#upcoming-projects" role="tab" aria-controls="profile" aria-selected="false">Upcoming Projects <i class="fa fa fa-angle-right" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="completed-projects-tab" data-toggle="tab" href="#completed-projects" role="tab" aria-controls="messages" aria-selected="false">Completed Projects <i class="fa fa fa-angle-right" aria-hidden="true"></i></a>
+                            </li>
+                            </ul>
+                        </div> 
+                        <div class="col-md-8  col-sm-12">
+                            <!-- Tab panes -->
+                            <div class="tab-content projects-container">
+                                <div class="tab-pane active" id="ongoing-projects" role="tabpanel" aria-labelledby="ongoing-projects-tab">
+                                    <!-- ongoing-projects -->
+                                    <div id="ongoing-projects-indicator" class="slide carousel projects-slider ongoing" data-wrap="false" data-interval="false" >
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="row justify-content-around">
+                                                    <!-- <div class="col-sm-6 col-md-5 projects-tile" data-aos="fade-up">
+                                                        <img class="desat" src="images/projects/ongoing/arham-aum/on_aum.jpg" alt="">
+                                                        <h4>Arham Aum</h4>
+                                                        <p>Arham aum is the most strategically located project in the heart of the bustling city of Mumbai, Whilst it is modestly away from the direct buzz of a Metropolitan.</p>
+                                                        <a href="arham-aum.php" class="cta">Know more...</a>
+                                                    </div> -->
+                                                    <div class="col-sm-6 col-md-5  projects-tile" data-aos="fade-up">
+                                                        <img class="desat" src="images/projects/ongoing/arham-vardham/on_vardham.jpg" alt="">
+                                                        <h4>Arham Vardham</h4>
+                                                        <p>A beautiful amalgamation of luxury lifestyle and traditional values, Vardham, is where your journey begins.</p>
+                                                        <a href="arham-vardham.html" class="cta">Know more...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>  
+                                    <!-- ongoing-projects -->  
+                                </div>
+                                <div class="tab-pane" id="upcoming-projects" role="tabpanel" aria-labelledby="profile-tab">
+                                     <!-- upcoming-projects -->
+                                     <div id="upcoming-projects-indicator" class="slide carousel projects-slider upcoming" data-wrap="false" data-interval="false" >
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="row justify-content-around">
+                                                        <div class="col-sm-6 col-md-5 projects-tile" data-aos="fade-up">
+                                                            <img src="images/projects-img.jpg" alt="">
+                                                            <h4>Arham</h4>
+                                                            <a href="#">Shivaji Park</a>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-5  projects-tile" data-aos="fade-up">
+                                                            <img src="images/upcoming-empty.jpg" alt="">
+                                                            <h4>Arham</h4>
+                                                            <a href="#" class="cta">Know more...</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>  
+                                        <!-- upcoming-projects -->  
+                                </div>
+                                <div class="tab-pane" id="completed-projects" role="tabpanel" aria-labelledby="messages-tab">
+                                    <!-- completed-projects -->
+                                    <div id="completed-projects-indicator" class="slide carousel projects-slider completed" data-wrap="false" data-interval="false" >
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    
+                                                    <div class="row justify-content-around">
+                                                        <div class="col-sm-6 col-md-5 projects-tile" data-aos="fade-up">
+                                                            <img class="desat" src="images/projects/ongoing/arham-aum/on_aum.jpg" alt="">
+                                                            <h4>Arham AUM</h4>
+                                                            <p>Arham aum is the most strategically located project in the heart of the bustling city of Mumbai, Whilst it is modestly away from the direct buzz of a Metropolitan.</p>
+                                                            <a href="arham-aum.html" class="cta">Know more...</a>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-5  projects-tile" data-aos="fade-up">
+                                                            <img class="desat" src="images/projects/ongoing/arham-brindavan/on_brindavan.jpg" alt="">
+                                                            <h4>Arham Brindavan</h4>
+                                                            <p>Cocooned from the city rush, this luxury haven is fully equipped to pamper and de-stress you.</p>
+                                                            <a href="arham-brindavan.html" class="cta">Know more...</a>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="row justify-content-around">
+                                                        <div class="col-sm-6 col-md-5 projects-tile" data-aos="fade-up">
+                                                            <img class="desat" src="images/projects/completed/cp_bzzola.jpg" alt="">
+                                                            <h4>ARHAM BEZZOLA</h4>
+                                                            <p class="project-location">Suman Nagar, Chembur</p>
+                                                            <a href="#" data-toggle="modal" data-id="cp_bzzola" class="open-project-details cta" data-target="#projectDetailModal" >Know more...</a>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-5  projects-tile" data-aos="fade-up">
+                                                            <img class="desat" src="images/projects/completed/cp_jasmine.jpg" alt="">
+                                                            <h4>ARHAM JASMINE</h4>
+                                                            <p class="project-location">Ghatla, Chembur</p>
+                                                            <a href="#" data-toggle="modal" data-id="cp_jasmine" class="open-project-details cta" data-target="#projectDetailModal" >Know more...</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-around">
+                                                            <div class="col-sm-6 col-md-5 projects-tile" data-aos="fade-up">
+                                                                <img class="desat" src="images/projects/completed/cp_kshitij.jpg" alt="">
+                                                                <h4>ARHAM KSHITIJ</h4>
+                                                                <p class="project-location">Ghatla, Chembur</p>
+                                                                <a href="#" data-toggle="modal" data-id="cp_kshitij" class="open-project-details cta" data-target="#projectDetailModal" >Know more...</a>
+                                                            </div>
+                                                            <div class="col-sm-6 col-md-5  projects-tile" data-aos="fade-up">
+                                                                <img class="desat" src="images/projects/completed/cp_maple.jpg" alt="">
+                                                                <h4>ARHAM MAPLE</h4>
+                                                                <p class="project-location">Near Gandhi Maidan, Chembur</p>
+                                                                <a href="#" data-toggle="modal" data-id="cp_maple" class="open-project-details cta" data-target="#projectDetailModal" >Know more...</a>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="row justify-content-around">
+                                                            <div class="col-sm-6 col-md-5 projects-tile" data-aos="fade-up">
+                                                                <img class="desat" src="images/projects/completed/cp_marigold.jpg" alt="">
+                                                                <h4>ARHAM MARIGOLD</h4>
+                                                                <p class="project-location">Datar Colony, Bhandup</p>
+                                                                <a href="#" data-toggle="modal" data-id="cp_marigold" class="open-project-details cta" data-target="#projectDetailModal" >Know more...</a>
+                                                            </div>
+                                                            <div class="col-sm-6 col-md-5  projects-tile" data-aos="fade-up">
+                                                                <img class="desat" src="images/projects/completed/cp_plams.jpg" alt="">
+                                                                <h4>ARHAM PALMS</h4>
+                                                                <p class="project-location">7th Cross Road, Chembur</p>
+                                                                <a href="#" data-toggle="modal" data-id="cp_plams" class="open-project-details cta" data-target="#projectDetailModal" >Know more...</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row justify-content-around">
+                                                                <div class="col-sm-6 col-md-5 projects-tile" data-aos="fade-up">
+                                                                    <img class="desat" src="images/projects/completed/pitru-chhaya.jpg" alt="">
+                                                                    <h4>ARHAM PITRU CHHAYA</h4>
+                                                                    <p class="project-location">Postal Colony, Chembur</p>
+                                                                    <a href="#" data-toggle="modal" data-id="pitru-chhaya" class="open-project-details cta" data-target="#projectDetailModal" >Know more...</a>
+                                                                </div>
+                                                                <div class="col-sm-6 col-md-5  projects-tile" data-aos="fade-up">
+                                                                    <img class="desat" src="images/projects/completed/tulsivihar.jpg" alt="">
+                                                                    <h4>ARHAM TULSIVIHAR</h4>
+                                                                    <p class="project-location">8th Road, Chembur</p>
+                                                                    <a href="#" data-toggle="modal" data-id="tulsivihar" class="open-project-details cta" data-target="#projectDetailModal" >Know more...</a>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="carousel-navigation">
+                                                <a class="carousel-control-prev" href="#completed-projects-indicator" role="button" data-slide="prev">
+                                                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                                                    <span class="">Prev</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#completed-projects-indicator" role="button" data-slide="next">
+                                                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                                                    <span class="">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>  
+                                        <!-- completed-projects -->  
+                                </div>
+                            </div>
+                        </div>
+    
+                        </div>
+                    </div>
+                </div>
+            <!-- projects -->
+
+  <!-- footer -->
+  <footer class="d-flex flex-column flex-md-row">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-12 col-md-5">
+                    <ul class="footer-m-query">
+                        <li><h5>For General Queries &amp; Any Enquiry</h5></li>
+                        <li>
+                            <p class="text-justify">Even if there is something you have always wanted to experience and can't find it, let us know and we promise we'll do our best to find it for you.</p>
+                        </li>
+                        <li><a href="mailto:info@mahavirgroup.com">info@mahavirgroup.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-5 text-right">
+                    <ul class="footer-m-social">
+                        <li class="social-media-links">
+                            <a href="https://facebook.com/mahavirgroupchembur" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/GroupMahavir"  target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://instagram.com/mahavirgroup/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UC9bGi1toINefBcGv30va0tw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>    
+                        <li>&copy;2022 Mahavir Group, All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.ba-resize.min.js"></script>
+        <script src="js/waypoint.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeXx7h9VghDhUhKTCVh683pj2qRBSOPEI&amp;callback=initMap"></script>
+        <script src="js/site.js"></script>
+        <script src="../www.google.com/recaptcha/api.js"></script>
+
+        
+    </footer>
+    <!-- footer -->
+    <!-- -->
+    <!-- contact modal -->
+
+<div class="modal fade m-contact-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Contact us</h5> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form action="http://www.mahavirgroup.com/incl/enquiry_mail.php" method="post" id="" class="needs-validation" name="queryForm" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" name="firstname" class="form-control" id="validationCustom01" placeholder="First name"  required>
+      <div class="invalid-feedback">
+        Please provide a first name.
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" name="lastname" class="form-control" id="validationCustom02" placeholder="Last name" required>
+      <div class="invalid-feedback">
+        Please provide a last name.
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Mobile</label>
+      <input type="text" name="mobile" class="form-control" id="validationCustom03" placeholder="Mobile" required>
+      <div class="invalid-feedback">
+        Please provide a valid mobile.
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom04">Email</label>
+      <input type="email" name="email" class="form-control" id="validationCustom04" placeholder="Email" required>
+      <div class="invalid-feedback">
+        Please provide a valid email.
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="col-md-12 mb-3">
+      <label for="validationCustom05">Comments</label>
+      <textarea name="feedback" id="validationCustom05" required class="form-control" cols="30" rows="5" placeholder="Comments"></textarea>
+      <div class="invalid-feedback">
+        Please provide enquiry/comments/suggestions.
+      </div>
+    </div>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6LfAybIfAAAAADqjLHpA6EpHxmbyUJskZg38wxXO"></div>
+
+  <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
+  <input class="btn btn-primary m-btn" type="submit" name="submit" value="Submit">
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact modal -->    <!-- -->
+    
+</div>
+<!-- site-container -->
+<script>
+  AOS.init();
+</script>
+</body>
+
+
+<!-- Mirrored from www.mahavirgroup.com/projects.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 15:02:21 GMT -->
+</html>
